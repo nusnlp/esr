@@ -200,7 +200,8 @@ class Main:
             wsd_label=self.data_args.wsd_label,
             annotators=[0],
             is_dev=False,
-            is_main_process=self.is_main_process
+            is_main_process=self.is_main_process,
+            extra_xml=self.data_args.extra_xml
         )
         self.dev_dataset = getattr(self.dataset_index, 'WsdDataset')(
             tokenizer=self.tokenizer,

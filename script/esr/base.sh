@@ -6,6 +6,7 @@ export LANG="C.UTF-8"
 
 wef_train=$data/WSD_Evaluation_Framework/Training_Corpora
 wef_test=$data/WSD_Evaluation_Framework/Evaluation_Datasets
+ufsac=$data/ufsac-public-2.1
 
 script=$(dirname $BASH_SOURCE)/../esr
 code=$(dirname $BASH_SOURCE)/../../code/esr

@@ -19,6 +19,7 @@ Downloading Datasets
 You need to download the following datasets:
 
  * [WSD Evaluation Framework](http://lcl.uniroma1.it/wsdeval)
+ * [UFSAC](https://drive.google.com/file/d/1Oigo3kzRosz2VjyA44vpJZ58tDFyLRMO)
 
 Setting up variables
 ------------
@@ -37,4 +38,14 @@ bash experiment/esr/roberta-base/dataset_semcor/sd_42/run.sh
 For ESR on SemCor with `roberta-large`:
 ```
 bash experiment/esr/roberta-large/dataset_semcor/sd_42/run.sh
+```
+
+For ESR on SemCor and WNGC with `roberta-base`:
+```
+bash experiment/esr/roberta-base/dataset_semcor_wngc/sd_42/run.sh
+```
+
+For ESR on SemCor and WNGC with `roberta-large`:
+```
+bash experiment/esr/roberta-large/dataset_semcor_wngc/sd_42/run.sh
 ```
