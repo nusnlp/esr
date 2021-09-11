@@ -20,12 +20,20 @@ You need to download the following datasets:
 
  * [WSD Evaluation Framework](http://lcl.uniroma1.it/wsdeval)
  * [UFSAC](https://drive.google.com/file/d/1Oigo3kzRosz2VjyA44vpJZ58tDFyLRMO)
+ * [FEWS](https://nlp.cs.washington.edu/fews/)
 
 Setting up variables
 ------------
 
 You need to modify `script/config.sh` according to your environment.
 Set `data` variable to the top directory where all the datasets are stored.
+
+Processing FEWS
+------------
+
+```
+bash experiment/fews/run.sh
+```
 
 Running Experiments
 ------------
@@ -48,4 +56,14 @@ bash experiment/esr/roberta-base/dataset_semcor_wngc/sd_42/run.sh
 For ESR on SemCor and WNGC with `roberta-large`:
 ```
 bash experiment/esr/roberta-large/dataset_semcor_wngc/sd_42/run.sh
+```
+
+For ESR on SemCor with `roberta-base`:
+```
+bash experiment/esr/roberta-base/dataset_fews/sd_42/run.sh
+```
+
+For ESR on SemCor and WNGC with `roberta-large`:
+```
+bash experiment/esr/roberta-large/dataset_fews/sd_42/run.sh
 ```

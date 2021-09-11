@@ -1,4 +1,6 @@
 *.pyc
+*.pkl
+*.xml
+*.txt
+
 /experiment/**/model/
-/experiment/**/predictions/
-/experiment/**/result.txt
