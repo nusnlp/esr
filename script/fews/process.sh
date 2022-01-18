@@ -41,12 +41,18 @@ for data in dev/dev.zero-shot test/test.zero-shot; do
         --fews_label $xml/$data.gold.key.txt
 done
 
-head -n -1 $xml/dev/dev.few-shot.data.xml > $xml/dev/dev.data.xml
-tail -n +3 $xml/dev/dev.zero-shot.data.xml >> $xml/dev/dev.data.xml
-cat $xml/dev/dev.few-shot.gold.key.txt > $xml/dev/dev.gold.key.txt
-cat $xml/dev/dev.zero-shot.gold.key.txt >> $xml/dev/dev.gold.key.txt
+for data in dev test; do
 
-head -n -1 $xml/test/test.few-shot.data.xml > $xml/test/test.data.xml
-tail -n +3 $xml/test/test.zero-shot.data.xml >> $xml/test/test.data.xml
-cat $xml/test/test.few-shot.gold.key.txt > $xml/test/test.gold.key.txt
-cat $xml/test/test.zero-shot.gold.key.txt >> $xml/test/test.gold.key.txt
+    mkdir -p $xml/$data.few-shot
+    mv $xml/$data/$data.few-shot.data.xml $xml/$data.few-shot/$data.few-shot.data.xml
+    mv $xml/$data/$data.few-shot.gold.key.txt $xml/$data.few-shot/$data.few-shot.gold.key.txt
+
+    mkdir -p $xml/$data.zero-shot
+    mv $xml/$data/$data.zero-shot.data.xml $xml/$data.zero-shot/$data.zero-shot.data.xml
+    mv $xml/$data/$data.zero-shot.gold.key.txt $xml/$data.zero-shot/$data.zero-shot.gold.key.txt
+
+    head -n -1 $xml/$data.few-shot/$data.few-shot.data.xml > $xml/$data/$data.data.xml
+    tail -n +3 $xml/$data.zero-shot/$data.zero-shot.data.xml >> $xml/$data/$data.data.xml
+    cat $xml/$data.few-shot/$data.few-shot.gold.key.txt > $xml/$data/$data.gold.key.txt
+    cat $xml/$data.zero-shot/$data.zero-shot.gold.key.txt >> $xml/$data/$data.gold.key.txt
+done
