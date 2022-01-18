@@ -1,8 +1,22 @@
 # Improved Word Sense Disambiguation with Enhanced Sense Representations
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/improved-word-sense-disambiguation-with/word-sense-disambiguation-on-supervised)](https://paperswithcode.com/sota/word-sense-disambiguation-on-supervised?p=improved-word-sense-disambiguation-with)
+
 This repository contains codes and scripts to build enhanced sense representations for word sense disambiguation.
 
-If you use this code for your work, please cite this [paper]():
+If you use this code for your work, please cite this [paper](https://aclanthology.org/2021.findings-emnlp.365.pdf):
 ```
+@inproceedings{song-etal-2021-improved-word,
+    title = "Improved Word Sense Disambiguation with Enhanced Sense Representations",
+    author = "Song, Yang  and
+      Ong, Xin Cai  and
+      Ng, Hwee Tou  and
+      Lin, Qian",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2021",
+    year = "2021",
+    url = "https://aclanthology.org/2021.findings-emnlp.365",
+    pages = "4311--4320"
+}
 ```
 
 Requirements
@@ -34,6 +48,12 @@ Processing FEWS
 ```
 bash experiment/fews/run.sh
 ```
+
+Using trained models
+------------
+
+You can train the models from scratch.
+Alternatively, you can use our [trained models](https://drive.google.com/file/d/1YO_tyE7Cm7uXqXaYnfNzdNhhEavb_mz7/view?usp=sharing).
 
 Running Experiments
 ------------
