@@ -78,12 +78,12 @@ For ESR on SemCor and WNGC with `roberta-large`:
 bash experiment/esr/roberta-large/dataset_semcor_wngc/sd_42/run.sh
 ```
 
-For ESR on SemCor with `roberta-base`:
+For ESR on FEWS with `roberta-base`:
 ```
 bash experiment/esr/roberta-base/dataset_fews/sd_42/run.sh
 ```
 
-For ESR on SemCor and WNGC with `roberta-large`:
+For ESR on FEWS with `roberta-large`:
 ```
 bash experiment/esr/roberta-large/dataset_fews/sd_42/run.sh
 ```
