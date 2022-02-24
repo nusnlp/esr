@@ -3,7 +3,7 @@
 # Python related
 conda_path=$HOME/miniconda3
 virtual_env=py3.8.8_pt1.9.0_tr4
-cache=$HOME/.cache/torch/transformers
+cache=$HOME/.cache/huggingface/transformers
 
 #  Java related
 java_path=/usr/bin

@@ -53,7 +53,7 @@ Using trained models
 ------------
 
 You can train the models from scratch.
-Alternatively, you can use our [trained models](https://drive.google.com/file/d/1YO_tyE7Cm7uXqXaYnfNzdNhhEavb_mz7/view?usp=sharing).
+Alternatively, you can use our [trained models](https://drive.google.com/file/d/1c8yooOoXsnIgJi0-To7xKNmYU-CugaeL/view?usp=sharing).
 
 Running Experiments
 ------------
